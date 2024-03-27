@@ -1,0 +1,48 @@
+h2.st1 {
+    color: red;
+    text-transform: capitalize;
+}
+
+.st2 {
+    color: rgb(0, 255, 200);
+    font-size: 3em;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.col1 {
+    color: springgreen;
+}
+
+.col2 {
+    color: blue;
+}
+
+.size1 {
+    font-size: 2em;
+}
+
+.tran1 {
+    text-transform: capitalize;
+}
+
+.text1 {
+    text-decoration: underline;
+}
+
+h1 {
+    color: purple;
+}
+
+.col1h1 {
+    color: pink;
+}
+
+#col2h1 {
+    color: greenyellow;
+}
+
+p {
+    color: red;
+    text-decoration: line-through;
+}

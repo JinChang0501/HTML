@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/list.css">
+    <title>Module17</title>
+    <style>
+        .list {
+            background-color: rgb(133, 255, 127);
+            border: 2px solid red;
+            overflow: auto;
+            list-style-type: none;
+        }
+
+        .list li {
+            width: 7em;
+            float: left;
+            line-height: 2.5em;
+        }
+
+        .list li a {
+            border-right: 3px solid black;
+            display: block;
+            text-align: center;
+        }
+
+        .list li a:link {
+            text-decoration: none;
+        }
+
+        .list li a:hover {
+            background-color: #66B3FF;
+            color: white;
+        }
+
+        h1 {
+            background-color: aqua;
+            visibility: hidden;
+        }
+
+        h2 {
+            background-color: blueviolet;
+            visibility: visible;
+        }
+
+        .box {
+            background-color: yellow;
+        }
+
+        .label1 {
+            background-color: orange;
+        }
+
+        .span2 {
+            visibility: hidden;
+        }
+
+        .box:hover .span1 {
+            display: none;
+        }
+
+        .box:hover .span2 {
+            visibility: visible;
+        }
+
+        .box1 {
+            width: 150px;
+            height: 100px;
+            border: 1px solid red;
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="list">
+        <li><a href="https://24h.pchome.com.tw/">首頁</a></li>
+        <li><a href="list.html">清單</a></li>
+        <li><a href="hyperlink.html">部落格</a></li>
+        <li><a href="mailto:jinchang0501@gmail.com">聯絡</a></li>
+    </ul>
+    <div class="box1">
+        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字
+    </div>
+    <h1>I am H1</h1>
+    <h2>I am H2</h2>
+    <div class="box">
+        <span class="span1">I am Span1</span>
+        <label for="" class="label1">
+            <span class="span2">Hey! I'm span2</span>
+        </label>
+    </div>
+</body>
+
+</html>

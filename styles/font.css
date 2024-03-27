@@ -1,0 +1,24 @@
+.gfont {
+    font-family: "Ms Madi", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2em;
+}
+
+@font-face {
+    src: url(../fonts/JustOldFashion.ttf);
+    font-family: font1;
+}
+
+.font1 {
+    font-family: font1;
+}
+
+@font-face {
+    src: url(../fonts/SCRIPTIN.ttf);
+    font-family: font2;
+}
+
+.font2 {
+    font-family: font2;
+}

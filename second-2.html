@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS的使用--自訂樣式(Class)</title>
+    <!-- <link rel="stylesheet" href="styles/st1.css">
+    <link rel="stylesheet" href="styles/font.css"> -->
+    <link rel="stylesheet" href="styles/link.css">
+
+    <!-- Google Font - Link -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap" rel="stylesheet"> -->
+
+    <style>
+        /* h2.st1 {
+            color: red;
+            text-transform: capitalize;
+        }
+
+        .st2 {
+            color: orange;
+            font-size: 2em;
+            font-style: italic;
+            text-decoration: line-through;
+        }
+
+        .col1 {
+            color: springgreen;
+        }
+
+        .col2 {
+            color: blue;
+        }
+
+        .size1 {
+            font-size: 2em;
+        }
+
+        .tran1 {
+            text-transform: capitalize;
+        }
+
+        .text1 {
+            text-decoration: underline;
+        }
+
+        h1 {
+            color: purple;
+        }
+
+        .col1h1 {
+            color: pink;
+        }
+
+        #col2h1 {
+            color: greenyellow;
+        } */
+    </style>
+</head>
+
+<body>
+    <!-- inline > embedding -->
+    <!-- id > class > type -->
+    <h1 class="col1h1 font1" style="color: darkgoldenrod;" id="col2h1">apple</h1>
+    <h2 class="st2 font2">orange</h2>
+    <h2 class="st1 font1">banana</h2>
+    <h3 class="st2 font2">grape</h3>
+    <!-- 同時使用多個class選取器 -->
+    <h3 class="col1 size1 tran1 col2">cat</h3>
+    <h3 class="col2 size1 text1">dog</h3>
+    <p class="gfont">google font via Link</p>
+    <p class="gfont">google font via import</p>
+
+</body>
+
+</html>

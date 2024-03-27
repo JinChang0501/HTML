@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        fieldset {
+            width: 500px;
+            border: 3px solid rgb(70, 119, 241);
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+
+        legend {
+            color: rgb(60, 84, 240);
+            font-style: italic;
+            margin-left: 50px;
+            font-weight: bold;
+            /* text-align: center; */
+        }
+
+        .st1 {
+            width: 450px;
+            border-bottom: 3px dashed gray;
+            /* margin-bottom: 20px; */
+            margin: 20px auto;
+            padding-bottom: 10px;
+        }
+
+        .sub {
+            width: 450px;
+            text-align: center;
+        }
+
+        .t1 {
+            /* border: 3px solid red; */
+            float: left;
+            width: 100px;
+            text-align: right;
+        }
+
+        em,
+        strong {
+            color: red;
+        }
+
+        textarea {
+            resize: none;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#" method="get" enctype="multipart/form-data">
+        <fieldset>
+            <legend>個人資料一<strong>(必填)</strong></legend>
+            <div class="st1">
+                <label class="t1" for="account1">姓名:</label>
+                <input type="text" name="account" size="10" autofocus placeholder="guest" autocomplete="off"
+                    id="account1">
+            </div>
+            <div class="st1">
+                <label for="" class="t1">性別:</label>
+                <label>
+                    <input type="radio" name="gender" id="" value="male" required checked>男
+                </label>
+                <label>
+                    <input type="radio" name="gender" id="" value="female">女
+                </label>
+            </div>
+            <div class="st1">
+                <label class="t1" for="pwd1">密碼:</label>
+                <input type="password" name="pwd" maxlength="6" id="pwd1" required>
+            </div>
+            <div class="st1">
+                <label for="" class="t1">生日:</label>
+                <input type="date" name="birth" value="1999-01-01">
+            </div>
+            <div class="st1">
+                <label for="" class="t1">E-mail:</label>
+                <input type="email" name="email" id="">
+            </div>
+            <div class="st1">
+                <label for="" class="t1">身分證字號:</label>
+                <input type="text" name="idcode" id="" maxlength="10" pattern="[a-z,A-Z]{1}[1-2,8-9]{1}\d{8}">
+            </div>
+        </fieldset>
+        <!--  -->
+        <fieldset>
+            <legend>地址<em>(必填)</em></legend>
+            <div class="st1">
+                <label for="" class="t1">縣市:</label>
+                <select name="add1" id="" multiple size="4">
+                    <option value="TPE">台北市</option>
+                    <option value="TPH">新北市</option>
+                    <option value="TYU">桃園市</option>
+                    <option value="HSU">新竹市</option>
+                </select>
+            </div>
+            <div class="st1">
+                <label for="add2" class="t1">完整地址:</label>
+                <input type="text" name="add2" id="add2" maxlength="30">
+            </div>
+        </fieldset>
+        <!--  -->
+        <fieldset>
+            <legend>個人資料二</legend>
+            <div class="st1">
+                <label for="" class="t1">檔案:</label>
+                <input type="file" name="" id="" accept=".jpg,.png" multiple>
+            </div>
+            <div class="st1">
+                <label for="fruit" class="t1">水果:</label>
+                <input type="text" name="fruit" id="fruit" list="fruit_list">
+                <datalist id="fruit_list">
+                    <option value="Apple">蘋果</option>
+                    <option value="Grape"></option>
+                    <option value="Banana">
+                </datalist>
+            </div>
+            <div class="st1">
+                <label for="" class="t1">興趣:</label>
+                <label>
+                    <input type="checkbox" name="hobby" id="" value="music">音樂
+                </label>
+                <label>
+                    <input type="checkbox" name="hobby" id="" value="sport">運動
+                </label>
+                <label>
+                    <input type="checkbox" name="hobby" id="" value="reading">閱讀
+                </label>
+                <label>
+                    <input type="checkbox" name="hobby" id="" value="movie">電影
+                </label>
+            </div>
+
+            <div class="st1">
+                <label class="t1" for="com1">意見:</label>
+                <textarea cols="40" rols="5" name="comment" id="com1"
+                    readonly>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, sapiente sed? Debitis architecto sint corrupti corporis cupiditate dignissimos delectus illo?</textarea>
+            </div>
+        </fieldset>
+        <div class="sub">
+            <input type="submit" value="送出">
+            <input type="reset" value="清除" disabled>
+        </div>
+    </form>
+
+</body>
+
+</html>

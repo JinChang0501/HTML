@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cover and contain</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box1 {
+            width: 200px;
+            height: 120px;
+            border: 2px solid orange;
+            border-radius: 15px;
+            margin: 20px auto;
+            padding: 20px;
+            box-shadow: 0 0 10px rgb(82, 77, 77);
+            background-image: url(bird150.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+
+        .box2 {
+            width: 200px;
+            height: 120px;
+            border: 2px solid orange;
+            border-radius: 15px 0 15px 0;
+            margin: 20px auto;
+            padding: 20px;
+            box-shadow: 0 0 10px rgb(82, 77, 77);
+            background-image: url(bird150.jpg);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+
+    </div>
+
+    <div class="box2">
+
+    </div>
+</body>
+
+</html>
